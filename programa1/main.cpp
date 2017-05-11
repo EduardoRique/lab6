@@ -10,6 +10,7 @@
 #include <string>
 #include <algorithm>
 #include <cctype>
+#include <cstring>
 
 using namespace std;
 
@@ -23,32 +24,54 @@ int main(void){
 
     string p1; /**< String que será verificada */
     string p2 = ""; /**< String de comparacao */
-    cout << "Digite a palavra: ";
+    cout << "Digite a frase: ";
     getline(cin, p1);
+
+    for(unsigned int i=(p1.length()-1); i!=0; i--){
+       
+        switch((int)p1[i]){
+            case -93:
+            case -94:
+            case -95:
+            case -125:
+            case -126:
+            case -127:
+                p1[i] = ' ';
+                p1[i-1] = 'a';
+                break;
+            case -75:
+            case -76:
+            case -77:
+            case -107:
+            case -108:
+            case -109:
+                p1[i] = ' ';
+                p1[i-1] = 'o';
+                break;
+            case -86:
+            case -87:
+            case -118:
+            case -119:
+                p1[i] = ' ';
+                p1[i-1] = 'e';
+                break;
+            case -83:
+            case -115:
+                p1[i] = ' ';
+                p1[i-1] = 'i';
+                break;
+            case -70:
+            case -102:
+                p1[i] = ' ';
+                p1[i-1] = 'u';
+                break;
+        }
+
+    }
 
     tratar_string(p1);
     
     Pilha pilha(p1.length());
-
-//    for(unsigned int i=0; i<p1.length(); i++){
-       
-//        if((int)p1[i] == 160){ //|| p1[i] == 'à' || p1[i] == 'ã' || p1[i] == 'â'){
-//            p1[i] = 'a';
-//        }
-//        if(p1[i] == 'é' || p1[i] == 'è' || p1[i] == 'ê' || p1[i] == 'ẽ'){
-//            p1[i] = 'e';
-//        }
-//        if(p1[i] == 'í' || p1[i] == 'ì' || p1[i] == 'î'){
-//            p1[i] = 'i';
-//        }
-//        if(p1[i] == 'ó' || p1[i] == 'ô' || p1[i] == 'ò' || p1[i] == 'õ'){
-//            p1[i] = 'o';
-        //}
-        //if(p1[i] == 'ú' || p1[i] == 'ù' || p1[i] == 'û'){
-          //  p1[i] = 'u';
-        //}
-//    }
-//cout << p1 << endl;
 
     for(unsigned int i=0; i<p1.length(); i++){
         pilha.push(p1[i]);

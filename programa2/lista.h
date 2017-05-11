@@ -1,34 +1,34 @@
 #ifndef LISTA_H
 #define LISTA_H
 
-/**template <class T>
-class LL {
-    public:
-        Node* ll;
-        Node(Node* l = NULL);
-};*/
-
 template <class T>
 class Node {
     public:
-        Node* ant;
+        Node<T>* ant;
         T dado;
-        Node* prox;
-        Node(Node* a = NULL, Node* p = NULL);
+        Node<T>* prox;
 };
+
+//template <class T>
+//class LL {
+//    public:
+//        Node<T>* ll;
+//};
 
 template <typename T>
 class Lista {
     private:
-        Node<T> *cabeca;
+        //LL<T> *cabeca;
         Node<T> *cauda;
     public:
-        Lista() {
-            cabeca = new Node<T>();
-            cauda = new Node<T>();
+        Lista() { 
+            //cabeca = new LL<T>();
+            //cabeca = NULL;
+            cauda->prox = NULL;
+            cauda->ant = NULL;
         }
         ~Lista() {                                                                                                                                                                                                               
-            delete cabeca;
+            //delete cabeca;
             delete cauda;
         }
         void Inserir(T el);
@@ -40,7 +40,7 @@ template<typename T>
 void Lista<T>::Inserir(T el){
     
     Node<T> **aa;
-    aa = &cabeca;
+    aa = &(cauda->prox);
     
     while(*aa && *aa->dado < el){
         aa = &((*aa)->prox);
