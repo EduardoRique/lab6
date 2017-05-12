@@ -27,8 +27,8 @@ int main(void){
     cout << "Digite a frase: ";
     getline(cin, p1);
 
-    for(unsigned int i=(p1.length()-1); i!=0; i--){
-       
+    for(unsigned int i=(p1.length()-1); i!=0; i--){ //Tirar acentuacao
+      
         switch((int)p1[i]){
             case -93:
             case -94:
