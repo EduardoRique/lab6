@@ -15,8 +15,13 @@ int main(){
 
     Lista<int> ist;
 
+    ist.Inserir(13);
+    ist.Inserir(10);
+    ist.Inserir(6);
     ist.Inserir(5);
-    ist.Remover(5);
+    ist.Inserir(2);
+    ist.Print();
+//    ist.Remover(5);
 
     return 0;
 }
