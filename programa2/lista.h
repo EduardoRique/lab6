@@ -31,16 +31,33 @@ class Lista {
             cabeca = NULL;
             cauda = NULL;
         }
-        /**~Lista() {                                                                                                                                                                                                               
-            Node<T> *itd = cabeca;
-            Node<T> *tmp = cauda;
-            while(itd != NULL){
-               itd = itd->prox;
+        ~Lista() {            
+            cauda = NULL;
+            Node<T> *tmp = cabeca;
+            while(tmp){
+                cauda = tmp;
+                tmp = tmp->prox;
             }
-            delete tmp;
-            cauda = itd;
+            
+            while(cauda != cabeca){
+                tmp = cabeca;
+                while(tmp->prox && tmp->dado<=cauda->dado){
+                    cauda = tmp;
+                    tmp = tmp->prox;
+                }
+                delete tmp;
+            }
+            
+            
+            //Node<T> *itd = cabeca;
+            //Node<T> *tmp = cauda;
+            //while(itd != NULL){
+            //   itd = itd->prox;
+           // }
+           // delete tmp;
+            //cauda = itd;
 
-        }*/
+        }
         void Inserir(T el);
         void Remover(T el);
         void Print();
@@ -90,15 +107,39 @@ template<typename T>
 void Lista<T>::Remover(T el){
     
     Node<T> *itd = cabeca;
-     
-    while(itd != NULL && itd->dado != el){
+    Node<T> *tmp = NULL;
+    
+    while(itd && itd->dado != el){
+        tmp = itd;
         itd = itd->prox;
     }
-
-    Node<T> *tmp = itd;
-    itd = itd->prox;
-    if(itd) itd->ant = tmp->ant;
-    if(tmp) delete tmp;
+    
+    if(itd && itd->dado == el){
+        if(itd->prox){
+            if(tmp){
+                tmp->prox = itd->prox;
+                itd->prox->ant = tmp;
+            }
+            else{
+                cabeca = itd->prox;
+                itd->prox->ant = NULL;
+            }
+        }
+        else{
+            if(tmp){
+                tmp->prox = NULL;
+            }
+            else{
+                cabeca = NULL;
+            }
+        }
+        
+        tmp = itd;
+        delete tmp;
+    }
+    else{
+        cout << "Elemento para ser removido não encontrado" << endl;
+    }
 }
 
 

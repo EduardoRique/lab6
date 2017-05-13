@@ -20,8 +20,9 @@ int main(){
     ist.Inserir(6);
     ist.Inserir(5);
     ist.Inserir(2);
+    ist.Remover(3);
     ist.Print();
-//    ist.Remover(5);
+    
 
     return 0;
 }
