@@ -15,7 +15,6 @@ OBJ_DIR = ./build
 DOC_DIR = ./doc
 INC_DIR = ./include
 SRC_DIR = ./src
-TST_DIR = ./test
 
 # Opcoes de compilacao
 CFLAGS = -Wall -pedantic -ansi -std=c++11 -I $(INC_DIR)
