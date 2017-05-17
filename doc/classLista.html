@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Amigas</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -119,6 +119,8 @@ Métodos Públicos</h2></td></tr>
 <tr class="separator:adce924e21607848663132290be1a959d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af297975e278b0c92cbf67d14b2f08366"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#af297975e278b0c92cbf67d14b2f08366">~Lista</a> ()</td></tr>
 <tr class="separator:af297975e278b0c92cbf67d14b2f08366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63a768b1fd0091dbffe52fa1cb1f524"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNode.html">Node</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#aa63a768b1fd0091dbffe52fa1cb1f524">getCabeca</a> ()</td></tr>
+<tr class="separator:aa63a768b1fd0091dbffe52fa1cb1f524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f86da92f17f6d93365a4a9b0f88a26a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#a3f86da92f17f6d93365a4a9b0f88a26a">Inserir</a> (T el)</td></tr>
 <tr class="separator:a3f86da92f17f6d93365a4a9b0f88a26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60b5cc2bf48de5e10693297e7400655c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLista.html#a60b5cc2bf48de5e10693297e7400655c">Remover</a> (T el)</td></tr>
@@ -290,23 +292,29 @@ template&lt;typename T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Métodos</h2>
-<a class="anchor" id="a3f86da92f17f6d93365a4a9b0f88a26a"></a>
+<a class="anchor" id="aa63a768b1fd0091dbffe52fa1cb1f524"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classLista.html">Lista</a>&lt; T &gt;::Inserir </td>
+          <td class="memname"><a class="el" href="classNode.html">Node</a>&lt;T&gt;* <a class="el" href="classLista.html">Lista</a>&lt; T &gt;::getCabeca </td>
           <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>el</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Insere um elemento na ordem</p>
-<p>Insere um elemento na lista de forma ordenada </p>
+<p>&lt; Retorna a cabeca da lista </p>
 
 </div>
 </div>
@@ -326,6 +334,26 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Insere um elemento na ordem </p>
+
+</div>
+</div>
+<a class="anchor" id="a3f86da92f17f6d93365a4a9b0f88a26a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classLista.html">Lista</a>&lt; T &gt;::Inserir </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>el</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Insere um elemento na ordem</p>
+<p>Insere um elemento na lista de forma ordenada </p>
 
 </div>
 </div>
@@ -418,8 +446,7 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove um elemento</p>
-<p>Remove um elemento da lista </p>
+<p>Remove um elemento </p>
 
 </div>
 </div>
@@ -438,7 +465,8 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove um elemento </p>
+<p>Remove um elemento</p>
+<p>Remove um elemento da lista </p>
 
 </div>
 </div>
@@ -467,7 +495,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Gerado em Segunda, 15 de Maio de 2017 00:21:32 para Laboratorio 6 por &#160;<a href="http://www.doxygen.org/index.html">
+Gerado em Quarta, 17 de Maio de 2017 13:27:43 para Laboratorio 6 por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

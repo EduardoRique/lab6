@@ -145,9 +145,9 @@ int main(int argc, char* argv[]){
                     cout << "Digite a nota do aluno: ";
                     cin >> no;
                     
-                    Aluno x(n, m, f, no);
+                    Aluno y(n, m, f, no);
 
-                    turmas[j].Inserir(x);
+                    turmas[j].Inserir(y);
                 }
                 else cout << "Turma inexistente" << endl;
             }

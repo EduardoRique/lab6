@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['lista',['Lista',['../classLista.html',1,'Lista&lt; T &gt;'],['../classLista.html#adce924e21607848663132290be1a959d',1,'Lista::Lista()'],['../classLista.html#adce924e21607848663132290be1a959d',1,'Lista::Lista()'],['../classLista.html#adce924e21607848663132290be1a959d',1,'Lista::Lista()']]],
-  ['lista_3c_20aluno_20_3e',['Lista&lt; Aluno &gt;',['../classLista.html',1,'']]]
+  ['getcabeca',['getCabeca',['../classLista.html#aa63a768b1fd0091dbffe52fa1cb1f524',1,'Lista']]],
+  ['getnome',['getnome',['../classTurma.html#a90ddbb958cdabda2db30645fc5fe4067',1,'Turma']]]
 ];

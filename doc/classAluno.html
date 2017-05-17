@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Amigas</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,10 +107,17 @@ Métodos Públicos</h2></td></tr>
 <tr class="separator:a9e5f61e9eb94bb4d64fb35577339c914"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1825c88738f80146dd75cba325255c3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAluno.html#a1825c88738f80146dd75cba325255c3b">Aluno</a> (string n=&quot;&quot;, int no=0)</td></tr>
 <tr class="separator:a1825c88738f80146dd75cba325255c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e5f61e9eb94bb4d64fb35577339c914"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAluno.html#a9e5f61e9eb94bb4d64fb35577339c914">Aluno</a> ()</td></tr>
-<tr class="separator:a9e5f61e9eb94bb4d64fb35577339c914"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1825c88738f80146dd75cba325255c3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAluno.html#a1825c88738f80146dd75cba325255c3b">Aluno</a> (string n=&quot;&quot;, int no=0)</td></tr>
-<tr class="separator:a1825c88738f80146dd75cba325255c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d3e938cb8328b2b1c9d3668190e92f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAluno.html#a81d3e938cb8328b2b1c9d3668190e92f">Aluno</a> (string n=&quot;&quot;, long int m=0, int f=0, float no=0)</td></tr>
+<tr class="separator:a81d3e938cb8328b2b1c9d3668190e92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23501fdf567150c95c7e8be91f23b6f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23501fdf567150c95c7e8be91f23b6f9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (<a class="el" href="classAluno.html">Aluno</a> const a)</td></tr>
+<tr class="separator:a23501fdf567150c95c7e8be91f23b6f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57008a133edd21b8f7d49e12a74f2c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa57008a133edd21b8f7d49e12a74f2c8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a class="el" href="classAluno.html">Aluno</a> const a)</td></tr>
+<tr class="separator:aa57008a133edd21b8f7d49e12a74f2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584852c4dffab8e0b935dbb188152b3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a584852c4dffab8e0b935dbb188152b3d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="classAluno.html">Aluno</a> const a)</td></tr>
+<tr class="separator:a584852c4dffab8e0b935dbb188152b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Atributos Públicos</h2></td></tr>
@@ -118,6 +125,12 @@ Atributos Públicos</h2></td></tr>
 <tr class="separator:a11ba4de4fb5de8e0ebf8ff2e8929d7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a069ee674fd600b3a1aa02d4e9df19a57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAluno.html#a069ee674fd600b3a1aa02d4e9df19a57">nota</a></td></tr>
 <tr class="separator:a069ee674fd600b3a1aa02d4e9df19a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0fdf50a3dd1d6f55b5cef4b86c1fa8c"><td class="memItemLeft" align="right" valign="top">long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAluno.html#ad0fdf50a3dd1d6f55b5cef4b86c1fa8c">matricula</a></td></tr>
+<tr class="separator:ad0fdf50a3dd1d6f55b5cef4b86c1fa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c540f4bab55908d246e629d7a0ef6f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAluno.html#a6c540f4bab55908d246e629d7a0ef6f1">faltas</a></td></tr>
+<tr class="separator:a6c540f4bab55908d246e629d7a0ef6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4434d4d0dfc84f1b5d3482224995cf37"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAluno.html#a4434d4d0dfc84f1b5d3482224995cf37">nota</a></td></tr>
+<tr class="separator:a4434d4d0dfc84f1b5d3482224995cf37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -189,33 +202,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9e5f61e9eb94bb4d64fb35577339c914"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classAluno.html">Aluno</a>&lt; T &gt;::<a class="el" href="classAluno.html">Aluno</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>&lt; Construtor padrao </p>
-
-</div>
-</div>
-<a class="anchor" id="a1825c88738f80146dd75cba325255c3b"></a>
+<a class="anchor" id="a81d3e938cb8328b2b1c9d3668190e92f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -233,7 +220,19 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">long int&#160;</td>
+          <td class="paramname"><em>m</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>no</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -253,6 +252,36 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Atributos</h2>
+<a class="anchor" id="a6c540f4bab55908d246e629d7a0ef6f1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classAluno.html">Aluno</a>&lt; T &gt;::faltas</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>faltas </p>
+
+</div>
+</div>
+<a class="anchor" id="ad0fdf50a3dd1d6f55b5cef4b86c1fa8c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">long int <a class="el" href="classAluno.html">Aluno</a>&lt; T &gt;::matricula</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>matricula </p>
+
+</div>
+</div>
 <a class="anchor" id="a11ba4de4fb5de8e0ebf8ff2e8929d7e3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -283,13 +312,28 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a4434d4d0dfc84f1b5d3482224995cf37"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classAluno.html">Aluno</a>&lt; T &gt;::nota</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>nota </p>
+
+</div>
+</div>
 <hr/>A documentação para esta classe foi gerada a partir do seguinte arquivo:<ul>
 <li>include/tarefa3/<a class="el" href="include_2tarefa3_2turmas_8h_source.html">turmas.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Gerado em Segunda, 15 de Maio de 2017 00:21:32 para Laboratorio 6 por &#160;<a href="http://www.doxygen.org/index.html">
+Gerado em Quarta, 17 de Maio de 2017 13:27:42 para Laboratorio 6 por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

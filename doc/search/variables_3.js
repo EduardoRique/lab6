@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['prox',['prox',['../classNode.html#ae4703a2ffe2e82fd464e86eae185a527',1,'Node']]]
+  ['matricula',['matricula',['../classAluno.html#ad0fdf50a3dd1d6f55b5cef4b86c1fa8c',1,'Aluno']]]
 ];

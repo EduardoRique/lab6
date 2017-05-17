@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['inserir',['Inserir',['../classLista.html#a3f86da92f17f6d93365a4a9b0f88a26a',1,'Lista::Inserir(T el)'],['../classLista.html#a3f86da92f17f6d93365a4a9b0f88a26a',1,'Lista::Inserir(T el)'],['../classLista.html#a3f86da92f17f6d93365a4a9b0f88a26a',1,'Lista::Inserir(T el)']]]
+  ['getcabeca',['getCabeca',['../classLista.html#aa63a768b1fd0091dbffe52fa1cb1f524',1,'Lista']]],
+  ['getnome',['getnome',['../classTurma.html#a90ddbb958cdabda2db30645fc5fe4067',1,'Turma']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['minusculas',['minusculas',['../tratastring_8h.html#ae43cf6b49fec4f2227f8a73cca5b2080',1,'minusculas(string &amp;s):&#160;tratastring.cpp'],['../tratastring_8cpp.html#ae43cf6b49fec4f2227f8a73cca5b2080',1,'minusculas(string &amp;s):&#160;tratastring.cpp']]]
+  ['lista',['Lista',['../classLista.html#adce924e21607848663132290be1a959d',1,'Lista::Lista()'],['../classLista.html#adce924e21607848663132290be1a959d',1,'Lista::Lista()'],['../classLista.html#adce924e21607848663132290be1a959d',1,'Lista::Lista()']]]
 ];

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['remove_5fespacos',['remove_espacos',['../tratastring_8h.html#ad9410c3aac66a30ca3358664a18e69c3',1,'remove_espacos(string &amp;s):&#160;tratastring.cpp'],['../tratastring_8cpp.html#ad9410c3aac66a30ca3358664a18e69c3',1,'remove_espacos(string &amp;s):&#160;tratastring.cpp']]],
-  ['remove_5fpontuacao',['remove_pontuacao',['../tratastring_8h.html#a2b03312ff168b030cd475c9060ae48eb',1,'remove_pontuacao(string &amp;s):&#160;tratastring.cpp'],['../tratastring_8cpp.html#a2b03312ff168b030cd475c9060ae48eb',1,'remove_pontuacao(string &amp;s):&#160;tratastring.cpp']]],
-  ['remover',['Remover',['../classLista.html#a60b5cc2bf48de5e10693297e7400655c',1,'Lista::Remover(T el)'],['../classLista.html#a60b5cc2bf48de5e10693297e7400655c',1,'Lista::Remover(T el)'],['../classLista.html#a60b5cc2bf48de5e10693297e7400655c',1,'Lista::Remover(T el)']]]
+  ['node',['Node',['../classNode.html',1,'Node&lt; T &gt;'],['../classNode.html#a0ac1d44cfe588be564acf25485029bd8',1,'Node::Node()'],['../classNode.html#a7d0c16f8f36938360471cb21aa749f67',1,'Node::Node(const T &amp;el, Node&lt; T &gt; *p=NULL, Node&lt; T &gt; *a=NULL)'],['../classNode.html#a0ac1d44cfe588be564acf25485029bd8',1,'Node::Node()'],['../classNode.html#a7d0c16f8f36938360471cb21aa749f67',1,'Node::Node(const T &amp;el, Node&lt; T &gt; *p=NULL, Node&lt; T &gt; *a=NULL)'],['../classNode.html#a0ac1d44cfe588be564acf25485029bd8',1,'Node::Node()'],['../classNode.html#a7d0c16f8f36938360471cb21aa749f67',1,'Node::Node(const T &amp;el, Node&lt; T &gt; *p=NULL, Node&lt; T &gt; *a=NULL)']]],
+  ['node_3c_20aluno_20_3e',['Node&lt; Aluno &gt;',['../classNode.html',1,'']]],
+  ['nome',['nome',['../classAluno.html#a11ba4de4fb5de8e0ebf8ff2e8929d7e3',1,'Aluno']]],
+  ['nota',['nota',['../classAluno.html#a069ee674fd600b3a1aa02d4e9df19a57',1,'Aluno::nota()'],['../classAluno.html#a4434d4d0dfc84f1b5d3482224995cf37',1,'Aluno::nota()']]]
 ];
