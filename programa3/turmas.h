@@ -3,7 +3,7 @@
 *@brief	Cabecalho da classe Turma
 *@author Luís Eduardo Rique (luiseduardorique@gmail.com)
 *@since 14/05/2017
-*@date  15/05/2017
+*@date  17/05/2017
 */
 #ifndef TURMAS_H
 #define TURMAS_H
@@ -23,15 +23,27 @@ using namespace std;
 class Aluno {
     public:    
         string nome; /**< nome */
-        int nota; /**< nota */
+        long int matricula; /**< matricula */
+        int faltas; /**< faltas */
+        float nota; /**< nota */
 
-        Aluno(){ /**< Construtor padrao */
-            nome = "";
-            nota = 0;
-        }
-        Aluno(string n = "", int no = 0) { /**< Construtor parametrizado */
+        Aluno(string n = "", long int m = 0, int f = 0, float no = 0) { /**< Construtor parametrizado */
             nome = n;
+            matricula = m;
+            faltas = f;
             nota = no;
+        }
+        bool operator<(Aluno const a) {
+            if (nota < a.nota) return true;
+            return false;
+        }
+        bool operator!=(Aluno const a) {
+            if (matricula != a.matricula) return true;
+            return false;
+        }
+        bool operator==(Aluno const a) {
+            if (matricula == a.matricula) return true;
+            return false;
         }
 };
 
@@ -42,14 +54,19 @@ class Aluno {
 	*/ 
 class Turma {
     private:
-       Lista<Aluno>* alunos; /**< lista de alunos */
+       string nomeT;
+       Lista<Aluno> alunos; /**< lista de alunos */
     public:
         Turma(){ /**< Construtor padrao */
-            alunos = NULL;
+            nomeT = "";
         }
-        void quais(Lista<Aluno>* a); /**< Lista os alunos da turma */
-        void quantos(Lista<Aluno>* a); /**< Informa a quantidade de alunos */
-        void media(Lista<Aluno>* a); /**< Informa a media das notas */
+        void setnome(string n);
+        string getnome();
+        void Inserir(Aluno a); /**< Insere aluno na turma */
+        void Remover(Aluno a); /**< Remove aluno da turma */
+        void quais(); /**< Lista os alunos da turma */
+        void quantos(); /**< Informa a quantidade de alunos */
+        void media(); /**< Informa a media das notas */
         friend ostream& operator<<(ostream& os, Aluno a);
         friend istream& operator>>(istream& is, Aluno &a);
 
