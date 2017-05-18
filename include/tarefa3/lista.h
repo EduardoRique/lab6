@@ -3,16 +3,16 @@
 *@brief	Cabecalho da classe Lista
 *@author Luís Eduardo Rique (luiseduardorique@gmail.com)
 *@since 10/05/2017
-*@date  13/05/2017
+*@date  17/05/2017
 */
 
 #ifndef LISTA_H
 #define LISTA_H
 
 #include <iostream>
+#include <string>
 
-using std::cout;
-using std::endl;
+using namespace std;
 
 /**
     * @class   Node lista.h
@@ -70,6 +70,9 @@ class Lista {
                 tmp = cabeca;
                 delete tmp;
             }
+        }
+        Node<T>* getCabeca(){ /**< Retorna a cabeca da lista */
+            return cabeca;
         }
         void Inserir(T el); /**< Insere um elemento na ordem */
         void Remover(T el); /**< Remove um elemento */

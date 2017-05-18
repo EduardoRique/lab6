@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
       <li>
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Amigas</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -101,25 +102,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span><a class="code" href="classAluno.html">Aluno</a> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span>:    </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">string</span> nome; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classAluno.html#ad0fdf50a3dd1d6f55b5cef4b86c1fa8c">   26</a></span>&#160;        <span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="classAluno.html#ad0fdf50a3dd1d6f55b5cef4b86c1fa8c">matricula</a>; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classAluno.html#a6c540f4bab55908d246e629d7a0ef6f1">   27</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classAluno.html#a6c540f4bab55908d246e629d7a0ef6f1">faltas</a>; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classAluno.html#a4434d4d0dfc84f1b5d3482224995cf37">   28</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="classAluno.html#a4434d4d0dfc84f1b5d3482224995cf37">nota</a>; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classAluno.html#a81d3e938cb8328b2b1c9d3668190e92f">   30</a></span>&#160;        <a class="code" href="classAluno.html#a81d3e938cb8328b2b1c9d3668190e92f">Aluno</a>(<span class="keywordtype">string</span> n = <span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">long</span> <span class="keywordtype">int</span> m = 0, <span class="keywordtype">int</span> f = 0, <span class="keywordtype">float</span> no = 0) { </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">long</span> <span class="keywordtype">int</span> matricula; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">int</span> faltas; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">float</span> nota; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classAluno.html#accae0e6be51e4c5905b2eef72fdba25a">   30</a></span>&#160;        <a class="code" href="classAluno.html#accae0e6be51e4c5905b2eef72fdba25a">Aluno</a>(<span class="keywordtype">string</span> n = <span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">long</span> <span class="keywordtype">int</span> m = 0, <span class="keywordtype">int</span> f = 0, <span class="keywordtype">float</span> no = 0) { </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            nome = n;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            matricula = m;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            faltas = f;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            nota = no;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">bool</span> operator&lt;(<a class="code" href="classAluno.html">Aluno</a> <span class="keyword">const</span> a) {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">if</span> (nome &lt; a.<a class="code" href="classAluno.html#a11ba4de4fb5de8e0ebf8ff2e8929d7e3">nome</a>) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">if</span> (faltas &lt; a.<a class="code" href="classAluno.html#a36afc8fd74be5bc44a78396453bb9b48">faltas</a>) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">bool</span> operator!=(<a class="code" href="classAluno.html">Aluno</a> <span class="keyword">const</span> a) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">if</span> (matricula != a.<a class="code" href="classAluno.html#ad0fdf50a3dd1d6f55b5cef4b86c1fa8c">matricula</a>) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">if</span> (matricula != a.<a class="code" href="classAluno.html#a75862be7fc3cd5c09bcd8e30e92247aa">matricula</a>) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">bool</span> operator==(<a class="code" href="classAluno.html">Aluno</a> <span class="keyword">const</span> a) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">if</span> (matricula == a.<a class="code" href="classAluno.html#ad0fdf50a3dd1d6f55b5cef4b86c1fa8c">matricula</a>) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">if</span> (matricula == a.<a class="code" href="classAluno.html#a75862be7fc3cd5c09bcd8e30e92247aa">matricula</a>) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
@@ -137,8 +138,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">void</span> Inserir(<a class="code" href="classAluno.html">Aluno</a> a); </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span> Remover(<a class="code" href="classAluno.html">Aluno</a> a); </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">void</span> quais(); </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">void</span> quantos(); </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">void</span> media(); </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">int</span> quantos(); </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">float</span> media(); </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">friend</span> ostream&amp; operator&lt;&lt;(ostream&amp; os, <a class="code" href="classAluno.html">Aluno</a> a);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">friend</span> istream&amp; operator&gt;&gt;(istream&amp; is, <a class="code" href="classAluno.html">Aluno</a> &amp;a);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
@@ -150,19 +151,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classAluno_html_a6c540f4bab55908d246e629d7a0ef6f1"><div class="ttname"><a href="classAluno.html#a6c540f4bab55908d246e629d7a0ef6f1">Aluno::faltas</a></div><div class="ttdeci">int faltas</div><div class="ttdef"><b>Definition:</b> turmas.h:27</div></div>
-<div class="ttc" id="classAluno_html"><div class="ttname"><a href="classAluno.html">Aluno</a></div><div class="ttdoc">Classe que representa um aluno. </div><div class="ttdef"><b>Definition:</b> turmas.h:24</div></div>
-<div class="ttc" id="classAluno_html_a11ba4de4fb5de8e0ebf8ff2e8929d7e3"><div class="ttname"><a href="classAluno.html#a11ba4de4fb5de8e0ebf8ff2e8929d7e3">Aluno::nome</a></div><div class="ttdeci">string nome</div><div class="ttdef"><b>Definition:</b> turmas.h:26</div></div>
-<div class="ttc" id="classTurma_html"><div class="ttname"><a href="classTurma.html">Turma</a></div><div class="ttdoc">Classe que representa uma turma. </div><div class="ttdef"><b>Definition:</b> turmas.h:44</div></div>
+<div class="ttc" id="classAluno_html_a75862be7fc3cd5c09bcd8e30e92247aa"><div class="ttname"><a href="classAluno.html#a75862be7fc3cd5c09bcd8e30e92247aa">Aluno::matricula</a></div><div class="ttdeci">long int matricula</div><div class="ttdef"><b>Definition:</b> turmas.h:26</div></div>
+<div class="ttc" id="classAluno_html_accae0e6be51e4c5905b2eef72fdba25a"><div class="ttname"><a href="classAluno.html#accae0e6be51e4c5905b2eef72fdba25a">Aluno::Aluno</a></div><div class="ttdeci">Aluno(string n=&quot;&quot;, long int m=0, int f=0, float no=0)</div><div class="ttdef"><b>Definition:</b> turmas.h:30</div></div>
+<div class="ttc" id="classAluno_html"><div class="ttname"><a href="classAluno.html">Aluno</a></div><div class="ttdoc">Classe que representa um aluno. </div><div class="ttdef"><b>Definition:</b> turmas.h:23</div></div>
+<div class="ttc" id="classTurma_html"><div class="ttname"><a href="classTurma.html">Turma</a></div><div class="ttdoc">Classe que representa uma turma. </div><div class="ttdef"><b>Definition:</b> turmas.h:67</div></div>
 <div class="ttc" id="classLista_html"><div class="ttname"><a href="classLista.html">Lista&lt; Aluno &gt;</a></div></div>
 <div class="ttc" id="classTurma_html_a8ad1feec07b4c0ff5d4ec51c8b4a61fd"><div class="ttname"><a href="classTurma.html#a8ad1feec07b4c0ff5d4ec51c8b4a61fd">Turma::Turma</a></div><div class="ttdeci">Turma()</div><div class="ttdef"><b>Definition:</b> turmas.h:60</div></div>
-<div class="ttc" id="classAluno_html_a4434d4d0dfc84f1b5d3482224995cf37"><div class="ttname"><a href="classAluno.html#a4434d4d0dfc84f1b5d3482224995cf37">Aluno::nota</a></div><div class="ttdeci">float nota</div><div class="ttdef"><b>Definition:</b> turmas.h:28</div></div>
-<div class="ttc" id="classAluno_html_a81d3e938cb8328b2b1c9d3668190e92f"><div class="ttname"><a href="classAluno.html#a81d3e938cb8328b2b1c9d3668190e92f">Aluno::Aluno</a></div><div class="ttdeci">Aluno(string n=&quot;&quot;, long int m=0, int f=0, float no=0)</div><div class="ttdef"><b>Definition:</b> turmas.h:30</div></div>
-<div class="ttc" id="classAluno_html_ad0fdf50a3dd1d6f55b5cef4b86c1fa8c"><div class="ttname"><a href="classAluno.html#ad0fdf50a3dd1d6f55b5cef4b86c1fa8c">Aluno::matricula</a></div><div class="ttdeci">long int matricula</div><div class="ttdef"><b>Definition:</b> turmas.h:26</div></div>
+<div class="ttc" id="classAluno_html_a36afc8fd74be5bc44a78396453bb9b48"><div class="ttname"><a href="classAluno.html#a36afc8fd74be5bc44a78396453bb9b48">Aluno::faltas</a></div><div class="ttdeci">int faltas</div><div class="ttdef"><b>Definition:</b> turmas.h:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Gerado em Quarta, 17 de Maio de 2017 13:27:42 para Laboratorio 6 por &#160;<a href="http://www.doxygen.org/index.html">
+Gerado em Quinta, 18 de Maio de 2017 01:36:36 para Laboratorio 6 por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

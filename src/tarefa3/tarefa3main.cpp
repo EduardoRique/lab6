@@ -8,20 +8,20 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include "turmas.h"
-#include "lista.h"
+#include "tarefa3/turmas.h"
+#include "tarefa3/lista.h"
 
 using namespace std;
 
 /**
     * @brief   Funcao principal
 	*/ 
-int main(int argc, char* argv[]){
+int main(){
 
     Turma turmas[100];
     int i=0;
-
-    ifstream entrada(argv[1]); 
+    //Leitura se houver arquivo
+    ifstream entrada("./data/entrada.txt"); 
     if(entrada){
 
         string n; /**< nome do aluno */
@@ -87,6 +87,7 @@ int main(int argc, char* argv[]){
         }
     i++;
     }
+    entrada.close();
 
         int opcao; /**< Opcao que sera passada pelo usuario */
     do{ 
@@ -218,7 +219,7 @@ int main(int argc, char* argv[]){
                 cin >> j;
 
                 if(j < i){
-                    turmas[j].quantos();
+                    cout <<turmas[j].quantos() << " alunos nesta turma" << endl;
                 }
                 else cout << "Turma inexistente" << endl;
             }
@@ -236,14 +237,28 @@ int main(int argc, char* argv[]){
                 cin >> j;
 
                 if(j < i){
-                    turmas[j].media();
+                    cout << endl;
+                    cout << "Media da turma = " << turmas[j].media() << endl;
+                    
                 }
                 else cout << "Turma inexistente" << endl;
             }
         }
 
     }while(opcao != 0);
-    
+    ofstream saida("./data/saida.txt");
+
+    if (saida)
+    {
+        for(int ii=0; ii<i; ii++){
+            saida << "Turma " << ii << endl;
+            saida << "Nome: " << turmas[ii].getnome() << endl;
+            saida << "Quantidade de alunos: " << turmas[ii].quantos() << endl;;
+            saida << "Media da turma: " << turmas[ii].media() << endl;
+            saida << endl;
+        }
+        saida.close ();
+    }
 
     return 0;
 }
