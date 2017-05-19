@@ -1,0 +1,10 @@
+Turma 0
+Nome: opa
+Quantidade de alunos: 5
+Media da turma: 4.2
+
+Turma 1
+Nome: jhs
+Quantidade de alunos: 2
+Media da turma: 8.4
+

@@ -1,6 +1,0 @@
-digraph "programa3" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  dir_57058ab1d81b249b52db7858d2406117 [shape=box, label="programa3", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_57058ab1d81b249b52db7858d2406117.html"];
-}
